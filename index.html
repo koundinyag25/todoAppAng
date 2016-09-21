@@ -11,8 +11,11 @@
     <h1>To-do Application With Angular.js</h1></center>
   <div class="jumbotron">
     <center>
-      <input type="text" ng-model="todo.subject" ng-keyup="create()" class="form-control" placeholder="Eneter the task">
-      <button class="btn btn-primary" ng-click="create()">create</button>
+      <div class="col-xs-4">
+        <input type="text" ng-model="todo.subject" ng-keyup="create()" class="form-control" placeholder="Eneter the task">
+        <button class="btn btn-primary" ng-click="create()">create</button>
+      </div>
+
       <div>{{messageStatus()}}</div>
     </center>
 
