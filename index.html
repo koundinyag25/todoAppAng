@@ -10,14 +10,12 @@
   <center>
     <h1>To-do Application With Angular.js</h1></center>
   <div class="jumbotron">
-        <div class="col-xs-6"></div>
-        <div class="col-xs-2">
-          <input type="text" ng-model="todo.subject" ng-keyup="create()" class="form-control" placeholder="Eneter the task">
-
-        </div>
-        <div class="col-xs-4">
+          <center>
+            <input type="text" ng-model="todo.subject" ng-keyup="create()" class="form-group" placeholder="Eneter the task">
             <button class="btn btn-primary" ng-click="create()">create</button>
-        </div>
+          </center>
+
+
 
 
       <div>{{messageStatus()}}</div>
