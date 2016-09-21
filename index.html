@@ -10,7 +10,7 @@
   <center>
     <h1>To-do Application With Angular.js</h1></center>
   <div class="jumbotron">
-      <center>
+        <div class="col-xs-8"></div>    
         <div class="col-xs-2">
           <input type="text" ng-model="todo.subject" ng-keyup="create()" class="form-control" placeholder="Eneter the task">
 
@@ -18,8 +18,7 @@
         <div class="col-xs-2">
             <button class="btn btn-primary" ng-click="create()">create</button>
         </div>
-  
-      </center>
+
 
       <div>{{messageStatus()}}</div>
 
