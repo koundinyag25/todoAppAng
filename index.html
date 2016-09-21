@@ -4,6 +4,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="app.js" charset="utf-8"></script>
+    <style media="screen">
+        .done-true  {
+           color: #777777;
+           text-decoration: line-through;
+          }
+    </style>
   </head>
   <body ng-app="myApp">
     <div ng-controller="TodoCtrl">
@@ -35,7 +41,7 @@
             <h4>Remove Task</h4></td>
         </tr>
         <tr ng-repeat="item in todoList">
-          <td>{{item.subject}}</td>
+          <td class="done-{{item.isCompleted}}">{{item.subject}}</td>
           <td>
             <center>
               <input type="checkbox" ng-model="item.isCompleted">
